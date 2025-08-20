@@ -5,3 +5,5 @@
 crash.log
 # macOS
 .DS_Store
+# Plans
+tfplan
