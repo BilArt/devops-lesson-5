@@ -36,3 +36,11 @@ module "ecr" {
   scan_on_push = true
   tags         = { Project = "lesson-5", Owner = "Artem" }
 }
+
+module "eks" {
+  source           = "./modules/eks"
+  cluster_name     = "lesson-7-eks-cluster"
+  subnet_ids       = module.vpc.public_subnet_ids
+  cluster_role_arn = module.eks.cluster_role_arn
+  node_role_arn    = module.eks.node_role_arn
+}

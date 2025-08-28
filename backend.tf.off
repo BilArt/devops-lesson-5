@@ -5,6 +5,6 @@ terraform {
     region         = "eu-north-1"
     dynamodb_table = "terraform-locks"
     encrypt        = true
-    profile        = "tf-lesson5" # ← добавили это
+    profile        = "tf-lesson5"
   }
 }

@@ -1,9 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+.venv/
+venv/
+.env
+.envrc
+*.sqlite3
+
+# Django
+static/
+media/
+*.log
+
 # Terraform
 .terraform/
-*.tfstate
-*.tfstate.*
+.terraform.lock.hcl
+terraform.tfstate*
 crash.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Helm
+charts/**/charts/
+charts/**/tmp/
+charts/**/templates/*.bak
+
 # macOS
 .DS_Store
-# Plans
-tfplan
+
+# IDE
+.vscode/
+.idea/
+
+# Docker
+*.tar
